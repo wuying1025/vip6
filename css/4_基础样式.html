@@ -49,7 +49,51 @@
             line-height: 100px;
             /* 首行缩进 */
             text-indent:50px;
+             /* 文本修饰 */
+           
+
         }
+        /* 列表 */
+        ul{
+            list-style: none;
+        }
+         /* 文本修饰 
+         text-decoration:underline(下划线) |none(没有)| line-through中划线| overline(上划线)
+         */
+        a{
+            text-decoration:line-through;
+        }
+
+
+
+        .aa{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+            display: inline-block;
+        }
+        .bb{
+            width: 200px;
+            height: 200px;
+            background: #0f0;
+        }
+        img{
+            width:200px;
+            height:200px;
+        }
+        /* 
+        行级元素 
+            1多个占一行 2不能设置宽高
+            span a strong b em 
+        块级元素
+            1自己占一行  2可以设置宽高
+            h1-h6 p div ul li 
+        行级块元素
+            1多个占一行 2可以设置宽高
+        互相转化
+            display:block(块)|inline(行)|inline-block（行级块元素）
+        */
+
 
     </style>
 </head>
@@ -65,9 +109,23 @@
         我是dhsdsgjhfg
     </div>
     <div id="div3">
-        哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵
-        哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵
+        hahahh 哈哈哈
     </div>
+    <ul>
+        <li>111</li>
+        <li>222</li>
+        <li>333</li>
+    </ul>
+    <a href="#">百度</a>
+
+    <div class="aa"></div>
+    <div class="aa"></div>
+    <div class="aa"></div>
+    <span class="bb">11</span>
+    <span class="bb">22</span>
+    <span class="bb">33</span>
+    <img src="../imgs/a.jpeg" alt="">
+    <img src="../imgs/a.jpeg" alt="">
 
 </body>
 

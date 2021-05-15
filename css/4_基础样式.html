@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
+        /* body{
+            font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+        } */
+        #div1 {
             /* 宽高 */
             width: 600px;
-            height: 400px;
+            /* height: 400px; */
             /* 背景 */
             /* background: #f00; */
             background-color: #f00;
@@ -19,18 +22,51 @@
                相对路径  ../父级   /子级
              */
             /* background-image: url(https://img2.baidu.com/it/u=3681880960,455182084&fm=26&fmt=auto&gp=0.jpg); */
-            background-image: url(../imgs/a.jpeg);
+            /* background-image: url(../imgs/a.jpeg); */
             background-repeat: no-repeat;
             /* 水平(+ 向右   -向左) 垂直（+向下  - 向上） */
             background-position: -100px 0px;
             /* background:#f00  url(https://img2.baidu.com/it/u=3681880960,455182084&fm=26&fmt=auto&gp=0.jpg) no-repeat -100px 0px  ; */
+        
+            /* 字体 浏览器默认字体大小16px */
+            font-size: 30px;
+            /* 字体粗细 100 - 900 默认值400（normal） */
+            /* font-weight: 400; */
+            font-weight: bolder;
+            /* 字体 */
+            font-family: 'Courier New', Courier, monospace;
+            /* 字体 斜体italic|正常 normal */
+            font-style: italic;
+            color: green;
         }
+         /* 文本相关 */
+        #div3{
+            background: yellow;
+            /* 文本水平对齐方式 left |center| right */
+            text-align: left;
+            height:100px;
+            /* 当行文本垂直居中 line-height = height */
+            line-height: 100px;
+            /* 首行缩进 */
+            text-indent:50px;
+        }
+
     </style>
 </head>
 
 <body>
+    <div id="div1" style="font-size: 12px;">
+        我是dhsdsgjhfg
+    </div>
+    <div style="font-weight: 400;">
+        我是dhsdsgjhfg
+    </div>
     <div>
-        dfdhg
+        我是dhsdsgjhfg
+    </div>
+    <div id="div3">
+        哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵
+        哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵哈哈哈哈哈哈呵呵呵呵呵呵
     </div>
 
 </body>

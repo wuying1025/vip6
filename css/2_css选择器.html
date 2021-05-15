@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器 */
+        /* div{
+            background: red;
+        } */
+        /* p {
+            background: purple;
+        } */
+        /* id选择器（页面中id唯一的）*/
+        #div1 {
+            background: yellow;
+        }
+        /*
+            yellow red
+            #f00  ff0000
+            rgb(0,0,0)
+        */
+        /* class选择器 一类 */
+        .list {
+            background: #6F26BD;
+        }
+        /* 后代选择器 */
+        /* #div2 h2 {
+            background: #0f0;
+        } */
+        /* 子代选择器 */
+        #div2 > h2{
+            background: yellow;
+        }
+     
+        /* 群组选择器|分组选择器 */
+        h4,h5,#div3{
+            background: #00fada;
+        }
+        /*伪类选择器  hover：鼠标划入 */
+        a:hover{
+            background: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">哈哈哈</div>
+    <div>呵呵呵</div>
+    <p>fdghjkl;</p>
+    <ul>
+        <li>1111</li>
+        <li class="list">2222</li>
+        <li class="list">3333</li>
+        <li>4444</li>
+    </ul>
+    <div id="div2">
+        <h2>我是儿子标题333</h2>
+        <p>我是11111落文fmddfhg字我是段落文字我是段落文字我是段落文字我是段落文字我是段落文字我是段落文字</p>
+        <div>
+            <img src="https://img.alicdn.com/imgextra/i3/6000000006417/O1CN01WvIXer1xH2EIncde0_!!6000000006417-0-octopus.jpg" alt="">
+            <h2>我是孙子图片介绍</h2>
+        </div>
+    </div>
+    <div id="div3">
+        <h2>我是标题2222</h2>
+        <p>我是sgdsyyf段落文dfidfmhwl[q--------字我是段落文字我是段落文字我是段落文字我是段落文字我是段落文字我是段落文字</p>
+    </div>
+
+    <h4>aaaaaaaa</h4>
+    <h5>dsfghjkl;l</h5>
+    <a href="#">百度</a>
+</body>
+
+</html>

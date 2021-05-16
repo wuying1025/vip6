@@ -14,11 +14,12 @@
     line-height: 35px;
     color: #888888;
 }
-.nav-left a{
+.nav-left a,.nav-right a{
     color:#888888 ;
 }
 .nav-right{
     float: right;
+    line-height:35px;
 }
 .nav-hello{
     margin-right:23px;
@@ -26,6 +27,9 @@
 .nav-line{
     margin:0 7px;
 }
-.nav-left .nav-active{
+#nav .nav-active{
     color: #6F26BD;
+}
+.nav-right .nav-line{
+    color:#888;
 }

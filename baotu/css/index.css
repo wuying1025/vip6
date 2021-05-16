@@ -1,11 +1,31 @@
 #nav{
     height: 35px;
-    background: #EEEEEE;
+    background: #eee;
 }
 .wrapper{
-    height: 35px;
-    background: #f00;
     width: 1199px;
-    /* 上下0  左右自适应（居中） */
+    height: 35px;
+    /* background: #f00; */
+    /* 固定宽度的块元素 水平居中 */
     margin:0 auto;
+}
+.nav-left{
+    float: left;
+    line-height: 35px;
+    color: #888888;
+}
+.nav-left a{
+    color:#888888 ;
+}
+.nav-right{
+    float: right;
+}
+.nav-hello{
+    margin-right:23px;
+}
+.nav-line{
+    margin:0 7px;
+}
+.nav-left .nav-active{
+    color: #6F26BD;
 }

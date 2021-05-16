@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div1{
+            background: orange;
+            /* height: 200px; */
+            /* overflow: hidden; */
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+            float: left;
+
+        }
+        #div3{
+            width: 200px;
+            height: 200px;
+            background: #00f;
+            float: left;
+        }
+        h3{
+            height: 50px;
+            background: #000;
+        }
+        .clear{
+            clear: both;
+        }
+        /* 在div1的内部的后边 自动生成一个元素 
+            ::after伪元素
+            */
+        .clearfix::after{ 
+            /* 在clearfix的内部的后边生成一个元素  块级元素 */
+            content:"";
+            display: block;
+            /* 清楚浮动 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 浮动
+            浮动的元素会脱离文档流  空间释放
+        父元素高度塌陷 
+        1 父元素高度固定，设置高度
+        2 父元素添加 overflow:hidden 
+        3 浮动的元素下边 添加一个clear:both的"块级元素"，
+        4 父元素添加class = clearfix 
+        
+     -->
+    <div id="div1" class="clearfix">
+        <div id="div2">1</div>
+        <div id="div3">2</div>
+
+        <!-- <div class="clear"></div> -->
+    </div>
+    <h3></h3>
+    
+    <ul class="clearfix">
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

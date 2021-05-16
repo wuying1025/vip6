@@ -33,3 +33,46 @@
 .nav-right .nav-line{
     color:#888;
 }
+/* header开始 */
+.img-box{
+    height: 151px;
+    float: left;
+}
+.search-box{
+    height: 151px;
+    /* background: #0f0; */
+    float: left;
+}
+.cart-box{
+    height: 151px;
+    background: #ff0;
+    float: left;
+
+}
+.logo{
+    margin-top:44px;
+    margin-right:123px;
+}
+.search-bar{
+    margin-top:43px;
+    width: 536px;
+    height: 44px;
+    border:2px solid #6F26BD;
+}
+.search-bar input{
+    width: 474px;
+    height: 44px;
+    border:none;
+    text-indent: 7px;
+    float:left;
+}
+.search-bar button{
+    width: 62px;
+    height: 44px;
+    background: #6F26BD;
+    border: none;
+    float:left;
+    color: #fff;
+    font-size:16px;
+
+}

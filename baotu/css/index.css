@@ -1,0 +1,11 @@
+#nav{
+    height: 35px;
+    background: #EEEEEE;
+}
+.wrapper{
+    height: 35px;
+    background: #f00;
+    width: 1199px;
+    /* 上下0  左右自适应（居中） */
+    margin:0 auto;
+}

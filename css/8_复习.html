@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 内部样式 -->
+    <style>
+        div{
+            width:100px;
+        }
+        p{
+
+        }
+        
+        a:hover{
+            background: red;
+        }
+        #div5{
+            width: 800px;
+            height: 500px;
+            /* 
+                水平 左left  中center  右right 
+                垂直 上top   中center  下bottom
+                background-position: 水平 垂直;
+            */
+            background:#f00 url(../imgs/a.jpeg) no-repeat right center;
+        }
+        span{
+            background: green;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="8_test.css">
+
+</head>
+<body>
+    <!-- 内联样式 -->
+    <div style="width:100px">
+
+    </div>
+    <div id="div1">
+
+    </div>
+
+    <ul id="ul1">
+        <li>11</li>
+        <li class="aa">22</li>
+        <li class="aa">
+            <h2>dfghjk</h2>
+            <ul>
+                <li class="aa">aaa</li>
+                <li>bbbb</li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>11</li>
+        <li class="aa">22</li>
+        <li class="aa">33</li>
+    </ul>
+    <a href="#">baidu </a>
+    <div id="div5">
+
+    </div>
+    <span>aaa</span>
+    <span>bbb</span>
+    <p style="background: #00f; width: 200px; height:200px; display: none;">11</p>
+    <!-- 
+    选择器:
+        标签选择器
+        id选择器 （id是唯一的）
+            #div1{ }
+        class选择器
+            .aa{ }
+        后代选择器
+            #ul1 .aa{  }
+        子代选择器
+            #ul1 > .aa{  }
+        分组选择器
+            #div1,.aa{
+                background:red;
+            }
+        伪类选择器
+            a:hover
+
+    css选择器的优先级: style > id > class > 标签
+    背景：
+        background-color:red;
+        background-image:url(xx.jpg);
+        background-repeat:no-repeat ; // no-repeat| repeat
+        background-position:
+                水平 固定值|左left|中center|右right 
+                垂直 固定值|上top|中center|下bottom
+                background-position: 水平 垂直;
+    字体：
+        font-size:16px (默认)
+        font-weight: 100-900
+        font-family:tahoma,arial,'Hiragino Sans GB'
+        font-style:italic(斜体)|normal（正常）
+        color:#f00;
+    文本： 
+        文本水平对齐
+            text-align:left|center|right 
+        单行文本垂直对齐
+            line-height:高度
+        文本修饰
+            text-decoration:underline(下划线) |none |line-through（中划线）
+        文本首行缩进
+            text-indent:20px;
+    
+    列表： list-style:none;
+    width:
+    height:
+
+    行级元素  span a strong b em
+        1、多个占一行   2、不能设置宽高
+    块级元素  p h1-h6 div ul li
+        1、自己占一行   2、可以设置宽高
+    行级块元素
+        1、多个占一行    2、可以设置宽高
+    
+    display:inline(行级) | block（块级元素）|inline-block(行级块元素)|none(隐藏)
+    
+    -->
+    
+</body>
+</html>

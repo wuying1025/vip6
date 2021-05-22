@@ -42,8 +42,7 @@
             /* 在clearfix的内部的后边生成一个元素  块级元素 */
             content:"";
             display: block;
-            /* 清楚浮动 */
-            clear: both;
+            clear:both;
         }
     </style>
 </head>
@@ -52,7 +51,7 @@
             浮动的元素会脱离文档流  空间释放
         父元素高度塌陷 
         1 父元素高度固定，设置高度
-        2 父元素添加 overflow:hidden 
+        2 父元素添加 overflow:hidden (溢出隐藏)
         3 浮动的元素下边 添加一个clear:both的"块级元素"，
         4 父元素添加class = clearfix 
         

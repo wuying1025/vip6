@@ -34,45 +34,70 @@
     color:#888;
 }
 /* header开始 */
-.img-box{
-    height: 151px;
+.logo-box{
     float: left;
 }
 .search-box{
-    height: 151px;
-    /* background: #0f0; */
     float: left;
 }
 .cart-box{
-    height: 151px;
-    background: #ff0;
     float: left;
-
 }
-.logo{
+.header-logo{
+    width: 176px;
+    height: 49px;
     margin-top:44px;
-    margin-right:123px;
+}
+.search-box{
+    margin-left:123px;
 }
 .search-bar{
-    margin-top:43px;
     width: 536px;
     height: 44px;
     border:2px solid #6F26BD;
+    background: #6F26BD;
+    margin-top:43px;
 }
 .search-bar input{
     width: 474px;
     height: 44px;
+    background: #fff;
     border:none;
-    text-indent: 7px;
-    float:left;
+    float: left;
+    text-indent:5px;
+    /* input点击 蓝色边 */
+    outline:none;
 }
 .search-bar button{
     width: 62px;
     height: 44px;
     background: #6F26BD;
-    border: none;
-    float:left;
+    float: left;
+    border:none;
     color: #fff;
-    font-size:16px;
+    font-size: 16px;
+}
+.cate-box{
+    margin-top:10px;
 
+}
+.cate-box a{
+    margin-right: 24px;
+    color: #999999;
+    font-family: "Source Han Sans CN";
+}
+.cart-box{
+    margin:56px 0 0 52px;
+}
+.shop-img{
+    /* 图片和文字标签 高度不一样，居中对齐 vertical-align: middle  */
+    vertical-align: middle;
+    
+    margin-top: -5px;
+}
+.cart-box a{
+    color:#959595;
+}
+.cart-box .num{
+    color:#FF4200;
 }

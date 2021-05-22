@@ -128,3 +128,22 @@
     left:0;
     top:0;
 }
+.banner-box{
+    height: 545px;
+    background: #f00;
+}
+.banner-center-box{
+    height: 545px;
+    background: #0f0;
+    position: relative;
+
+}
+.banner-cate-box{
+    height: 596px;
+    background: #00f;
+    width: 260px;
+    position: absolute;
+    top:-50px;
+
+
+}

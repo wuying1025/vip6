@@ -109,11 +109,22 @@
     padding-left:260px;
     box-sizing: border-box;
     margin-top:40px;
-
 }
 .nav-2 a{
     padding:0 45px;
     color:#606060;
     font-weight: 500;
     font-size: 14px;
+}
+.hot{
+    /* 绝对定位 相对于最近已定位的祖先元素 */
+    position: absolute;
+    right: 22px;
+    top: -22px;
+}
+.list{
+    /* 相对于自己的初始位置  空间不释放 */
+    position: relative;
+    left:0;
+    top:0;
 }

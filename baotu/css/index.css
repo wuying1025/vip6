@@ -92,7 +92,7 @@
 .shop-img{
     /* 图片和文字标签 高度不一样，居中对齐 vertical-align: middle  */
     vertical-align: middle;
-    
+
     margin-top: -5px;
 }
 .cart-box a{
@@ -100,4 +100,20 @@
 }
 .cart-box .num{
     color:#FF4200;
+}
+/* 导航开始 */
+.nav-2{
+    /* background: #f00; */
+    height: 50px;
+    line-height: 50px;
+    padding-left:260px;
+    box-sizing: border-box;
+    margin-top:40px;
+
+}
+.nav-2 a{
+    padding:0 45px;
+    color:#606060;
+    font-weight: 500;
+    font-size: 14px;
 }

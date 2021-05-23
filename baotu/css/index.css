@@ -134,15 +134,59 @@
 }
 .banner-center-box{
     height: 545px;
-    background: #0f0;
+    /* background: #0f0; */
     position: relative;
 }
 .banner-cate-box{
     height: 596px;
-    background: #00f;
+    /* background: #00f; */
     width: 260px;
     position: absolute;
     top:-50px;
 
 
+}
+.banner-cate-title{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: #6F26BD;
+}
+.icon-meirong{
+    color: #fff;
+}
+.icon-shuma{
+    color: #fff;
+    font-size: 50px;
+}
+.icon-cate{
+    float: left;
+    margin-right: 7px;
+    margin-top:15px;
+
+}
+.cate-info{
+    float: left;
+    width: 216px;
+    height: 81px;
+    border-bottom: 1px solid #fff;
+    padding:0 11px 0 9px;
+    box-sizing: border-box;
+}
+.cate-list-box{
+    padding:16px 7px 0 14px;
+    background: rgba(0,0,0,0.4);
+    height: 545px;
+    box-sizing: border-box;
+}
+.cate-info-title{
+    /* color:#FFFEFE; */
+    font-size: 16px;
+    height: 53px;
+    line-height: 53px;
+}
+.cate-info a{
+    color:#FFFEFE;
 }

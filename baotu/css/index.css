@@ -226,3 +226,50 @@
 .seckill-wrapper{
     margin-top:41px;
 }
+.seckill-list-box{
+    margin-top:21px;
+}
+.seckill-pro-img{
+    width: 185px;
+    height: 187px;
+}
+.seckill-pro-title{
+    color:#666;
+    font-size: 14px;
+    margin-top:10px;
+}
+.seckill-pro-price{
+    color:#666;
+    margin-bottom: 10px;
+}
+.seckill-pro-price span{
+    color:#FF4200;
+}
+.seckill-status{
+    width: 168px;
+    height: 18px;
+    border:1px solid #A6A6A6;
+    /* 边框圆角 */
+    border-radius: 5px;
+    color: #A6A6A6;
+    font-size: 13px;
+    text-align: center;
+    line-height:18px;
+    position: relative;
+}
+.seckill-status span{
+    position: absolute;
+    left:0px;
+    top:0px;
+    width: 28px;
+    height: 18px;
+    background: #A6A6A6;
+    border-radius: 3px;
+}
+.seckill-status span img{
+    margin-top:2px;
+}
+.seckill-list{
+    float: left;
+    margin-right: 10px;
+}

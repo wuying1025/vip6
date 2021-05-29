@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #div0{
+            width: 500px;
+            /* height: 500px; */
+            background: #ccc;
+            /* 溢出隐藏 */
+            /* overflow: hidden; */
+            /* 
+            display:inline-block  的两个元素中间有空白
+            解决方式：
+                1、设置空格文字的字体大小是0
+                2、去掉空格回车
+                3、给元素设置负左外边距
+             */
+            /* font-size: 0px; */
+
+            /* height:200px; */
+
+        }
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: rgb(15, 13, 13);
+            float: left;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            background: #0f0;
+            float: left;
+
+        }
+        h3{
+            height: 50px;
+            background: #f00;
+        }
+        /* css3 伪元素 after 内部的后边*/
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动  浮动的元素会脱离文档流  空间释放
+
+            浮动会导致父元素高度塌陷
+        清楚浮动方式：
+            1、父元素添加overflow:hidden
+            2、父元素设置高度
+            3、浮动的元素的下边添加一个块元素  clear:both
+            4、提取 .clearfix
+            
+     -->
+    <div id="div0" class="clearfix">
+        <div id="div1"></div>     
+        <div id="div2"></div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+    <h3></h3>
+    
+</body>
+</html>

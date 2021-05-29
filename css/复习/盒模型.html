@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1,#div2{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+            float: left;
+            /* border:2px solid #000; */
+            /* 将盒模型设置成怪异盒模型 */
+            box-sizing: border-box;
+            padding:20px;
+            /* padding: 20px;
+            border: 5px solid #000; */
+            /* margin: 50px; */
+        }
+        #div3{
+            width: 400px;
+            height: 500px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<!-- 
+
+    盒模型 
+    标准盒模型  标准浏览器 
+        设置width= 200 
+        内容宽度 
+    怪异盒模型  ie6及ie6以下浏览器 不写DOCTYPE会表现成怪异盒模型
+        设置width= 200 
+        内容+padding+border
+    转化 box-sizing:border-box (怪异盒模型)| content-box（标准盒模型）
+ -->
+<body>
+    <div id="div3">
+        <div id="div1">哈哈哈哈</div>
+        <div id="div2">哈哈哈哈</div>
+    </div>
+
+</body>
+
+</html>

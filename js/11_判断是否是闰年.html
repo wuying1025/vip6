@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+          取余
+        2．
+        如果某年的年份值是4的倍数并且不是100的倍数
+        ，或者该年份值是400的倍数，那么这一年就是闰年。
+        */ 
+        function isRunNian(year){ //行参
+            if( (year%4 == 0 && year%100 != 0) || year %400 == 0){
+                // console.log(year+"是闰年")
+                return true;
+            }else{
+                // console.log(year+"不是闰年")
+                return false;
+                console.log('haha');
+            }
+        }
+
+        // 返回一个值return   true 是闰年 ，false不是闰年
+        var val = isRunNian(2021); //实参
+        console.log(val);
+
+        
+
+
+        
+
+
+    </script>
+</body>
+</html>

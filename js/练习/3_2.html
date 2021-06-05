@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var date = new Date(); 
+        var year = date.getFullYear();
+
+
+        // date.setDate(8);
+
+    //    console.log( date.getDate() ); //1-31
+
+    //    console.log( date.getDay() );
+    //    console.log( date.getFullYear() );
+        /* 如果某年的年份值是4的倍数并且不是100的倍数，
+        或者该年份值是400的倍数，那么这一年就是闰年。
+        请编制一个页面，该页面显示当天是否处于闰年。
+        */
+        function isRunnian(y){
+            return (y%4 == 0 && y%100 != 0 || y%400 == 0)
+        }
+
+        console.log( isRunnian(2021)  )
+
+
+    </script>
+    
+</body>
+</html>

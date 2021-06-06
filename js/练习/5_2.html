@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2.	在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。 -->
+    <script>
+        // 只能被1和它本身整除的数 
+        // 判断是否为素数  9
+        function isSushu(num){
+            // 2 - num-1
+            for(var i=2; i<num; i++){
+                if(num%i == 0){
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        console.log( isSushu(100) );
+
+        var sum = 0;//记录素数个数
+
+        for(var j=100; j<=1000; j++){
+            if( isSushu(j) ){
+                document.write(j+","); //先输出
+                sum++;//记录素数个数
+                if(sum % 6 == 0){
+                    document.write('<br>');
+                }
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+            border:1px solid #000;
+            background: #ccc;
+            width: 60px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+        .selected{
+            background: red;
+            color: #fff;
+        }
+        .content{
+            width: 300px;
+            height: 100px;
+            border:1px solid #000;
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- 按钮 -->
+        <ul>
+            <li>实事</li>
+            <li>体育</li>
+            <li>娱乐</li>
+        </ul>
+        <!-- 内容 -->
+        <div>
+            <div class="content active">实事内容</div>
+            <div class="content">体育内容</div>
+            <div class="content">娱乐内容</div>
+        </div>
+    </div>
+    <script>
+        /*
+            undefined
+            定义变量 没有赋值
+            数组越界 
+            访问对象下没有的属性 
+            函数没有返回值 
+
+        */ 
+       var aLi = document.getElementsByTagName('li');
+        // 循环给每一个li绑定点击事件
+       for(var i=0; i<aLi.length; i++){ 
+            aLi[i].onclick = function(){
+                // i == 3
+                // 将所有li的样式去掉
+                for(var j=0; j<aLi.length ;j++){
+                    aLi[j].className="";
+                }
+                // this对当前对象的的引用 
+                this.className = "selected";
+            }
+       }
+
+    </script>
+</body>
+</html>

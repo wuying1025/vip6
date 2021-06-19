@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1" style="background: red;">hahah</div>
+
+    <ul>
+        <li>111</li>
+        <li class="list">111</li>
+        <li class="list">111</li>
+    </ul>
+    <input type="radio" name="sex">男
+    <input type="radio" name="sex">女
+
+
+
+    <script>
+        // 通过id获取元素 返回对象
+        var oDiv = document.getElementById('div1');
+
+        console.log(oDiv);
+        oDiv.style.background = "Red";
+        // 通过标签名获取元素 返回的是数组 
+        var aLi = document.getElementsByTagName('li');
+        var li0 = aLi[0]
+
+        var li0 = document.getElementsByTagName('li')[0];
+
+        console.log(aLi);
+        aLi[0].style.background = "yellow";
+
+    
+
+        var list = document.getElementsByClassName('list');
+        console.log(list);
+
+        var arr = document.getElementsByName('sex');
+        console.log(arr);
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

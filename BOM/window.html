@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            position: fixed;
+            right:10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">click</button>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3>
+
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+    <h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3><h3>哈哈哈哈哈</h3>
+
+    <script>
+        // 获取按钮
+        var oBtn = document.getElementById('btn');
+        oBtn.onclick = function(){
+            // console.log('哈哈');
+            var timer = setInterval(function(){
+                // 获取滚动条滚动的高度
+                var scrollTop = document.documentElement.scrollTop||document.body.scrollTop;
+                // 如果 <=0  清除定时器
+                if(scrollTop <= 0){
+                    clearInterval(timer)
+                }
+                scrollBy(0,-100);
+            }, 20);
+        }
+
+       
+    </script>
+</body>
+</html>

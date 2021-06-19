@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        concat()	连接两个或更多的数组，并返回结果。
+        join()	把数组的所有元素放入一个字符串。元素通过指定的分隔符进行分隔。
+        pop()	删除并返回数组的最后一个元素
+        push()	向数组的末尾添加一个或更多元素，并返回新的长度。
+        shift()	删除并返回数组的第一个元素
+        splice()	删除元素，并向数组添加新元素。
+    -->
+    <script>
+
+        var arr = [1, 2, 3, 4, 5];
+        console.log(arr.join('-')); //"1-2-3-4-5"
+
+        // 字符串反转
+        var str = "abcdefg";
+
+        var arr = str.split('');//['a','b','c','d','e','f','g']
+        arr.reverse();//['g','f',,,,]
+        console.log(arr.join(""));
+
+        var arr3 = [1,2,3,4,5]
+
+        arr3.splice(1,0,'a');
+
+        console.log(arr3);
+
+        
+
+// arr.pop()
+
+    </script>
+</body>
+
+</html>

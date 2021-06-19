@@ -64,16 +64,24 @@
 
         */ 
        var aLi = document.getElementsByTagName('li');
+       var aDiv = document.getElementsByClassName('content')
         // 循环给每一个li绑定点击事件
        for(var i=0; i<aLi.length; i++){ 
+            // 每一个li添加索引 
+            aLi[i].index = i;
             aLi[i].onclick = function(){
                 // i == 3
                 // 将所有li的样式去掉
                 for(var j=0; j<aLi.length ;j++){
                     aLi[j].className="";
+                    // 将所有div隐藏
+                    aDiv[j].className = "content";
                 }
                 // this对当前对象的的引用 
                 this.className = "selected";
+
+                // 获取到div中索引为this.index的div显示 其他的隐藏
+                aDiv[this.index].className = "content active";
             }
        }
 

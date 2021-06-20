@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        ul{
+
+        ul {
             list-style: none;
         }
-        #container{
+
+        #container {
             width: 750px;
-            margin:100px auto;
+            margin: 100px auto;
             position: relative;
         }
-        #img-box img{
+
+        #img-box img {
             display: none;
         }
-        #img-box .active{
+
+        #img-box .active {
             display: block;
         }
-        #btn-box{
+
+        #btn-box {
             position: absolute;
-            right:10px; 
+            right: 10px;
             bottom: 10px;
         }
-        #btn-box li,#arrow-box li{
+
+        #btn-box li,
+        #arrow-box li {
             float: left;
             width: 20px;
             height: 20px;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0, 0, 0, 0.4);
             color: #Fff;
             font-size: 12px;
             text-align: center;
@@ -41,18 +49,21 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        #btn-box li.active{
+
+        #btn-box li.active {
             background: #ff0036;
         }
-        #arrow-box{
+
+        #arrow-box {
             position: absolute;
-            left:10px;
+            left: 10px;
             bottom: 10px;
         }
 
         /* 选择器优先级 style > id > class >标签 */
     </style>
 </head>
+
 <body>
 
     <div id="container">
@@ -71,49 +82,78 @@
             <li>5</li>
         </ul>
         <ul id="arrow-box">
-            <li>&lt;</li>
+            <li id="prev">&lt;</li>
             <li id="next">&gt;</li>
         </ul>
 
     </div>
-    
+
     <script>
-        var aLi = document.getElementsByTagName('li');
+        var oBtnBox = document.getElementById('btn-box');
+        var aLi = oBtnBox.getElementsByTagName('li');
         var aImg = document.getElementsByTagName('img');
 
         var oNext = document.getElementById('next');
+        var oPrev = document.getElementById('prev');
+        var oContainer = document.getElementById('container');
+        // 如果用class 
+        // var onext = document.getElementsByClassName('next')[0]
         // 记录当前索引
         var iNow = 0;
 
-        for(var i=0; i<aLi.length; i++){
+        for (var i = 0; i < aLi.length; i++) {
             // 给每一个li自定义属性 index 
             aLi[i].index = i;
-            aLi[i].onclick = function(){
-                for(var j=0; j<aLi.length; j++){
-                    aLi[j].className = "";
-                    aImg[j].className = "";
-                }
-                this.className = "active";
-                // 获取索引 this.index
-                aImg[this.index].className = "active";
+            aLi[i].onclick = function () {
+                // aLi数组中索引是this.index显示 aImg数组中索引为this.index显示
+                change(this.index);
+                iNow = this.index;
             }
         }
-
-        oNext.onclick = function(){
+        oNext.onclick = function () {
             // 显示下一张图 
             iNow++;
             // iNow = iNow%5;
-            if(iNow >= aImg.length){
+            if (iNow >= aImg.length) {
                 iNow = 0;
             }
-            for(var i=0; i<aImg.length ; i++){
+            // aLi数组中索引是iNow显示 aImg数组中索引为iNow显示
+            change(iNow)
+        }
+        oPrev.onclick = function () {
+            iNow--;
+            if (iNow < 0) {
+                iNow = aLi.length - 1;
+            }
+            // aLi数组中索引是iNow显示 aImg数组中索引为iNow显示
+            change(iNow)
+
+        }
+        function change(idx) { //接收参数索引 讲索引为idx的图片和按钮显示 其他隐藏
+            for (var i = 0; i < aImg.length; i++) {
                 aImg[i].className = "";
                 aLi[i].className = "";
             }
-            aImg[iNow].className = "active";
-            aLi[iNow].className = "active"
+            aImg[idx].className = "active";
+            aLi[idx].className = "active";
         }
-
+        // 创建全局timer 
+        var timer;
+        run();
+        // 鼠标划入
+        oContainer.onmouseover = function () {
+            clearInterval(timer);
+        }
+        // 鼠标划出
+        oContainer.onmouseout = function () {
+            run();
+        }
+        function run() {
+            timer = setInterval(function () {
+                oNext.click();
+            }, 2000);
+        }
     </script>
 </body>
+
 </html>
